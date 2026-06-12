@@ -1,0 +1,15 @@
+# Render Blueprint：このファイルがあると Render が自動でバックエンドを構成する。
+# Render ダッシュボードで「New > Blueprint」からこのリポジトリを選ぶと読み込まれる。
+services:
+  - type: web
+    name: bookmark-manager-api
+    runtime: go
+    plan: free
+    rootDir: backend
+    buildCommand: go build -o app .
+    startCommand: ./app
+    envVars:
+      # SQLite ファイルの置き場所。無料枠ではコンテナ再起動で消える点に注意。
+      - key: DB_PATH
+        value: /tmp/bookmarks.db
+      # PORT は Render が自動で渡すため、ここでは指定しない（アプリ側が読み取る）。

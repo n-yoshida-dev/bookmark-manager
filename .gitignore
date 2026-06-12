@@ -1,0 +1,17 @@
+# Go
+*.db
+backend/bookmark-manager
+backend/bookmarks.db
+
+# Node
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# 環境変数
+.env
+.env.local
+
+# OS / エディタ
+.DS_Store
+*.log

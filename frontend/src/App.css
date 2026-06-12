@@ -1,0 +1,128 @@
+/* ブックマーク管理アプリのスタイル */
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 追加フォーム */
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-form input {
+  flex: 1 1 160px;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.add-form button {
+  flex: 0 0 auto;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background: #1d4ed8;
+}
+
+/* 検索ボックス */
+.search {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* 一覧 */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: left;
+  background: #fff;
+}
+
+.item-main {
+  min-width: 0;
+}
+
+.item-main a {
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.item-main a:hover {
+  text-decoration: underline;
+}
+
+.memo {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.url {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  word-break: break-all;
+}
+
+.delete {
+  flex: 0 0 auto;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+  background: #fff;
+  color: #dc2626;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background: #dc2626;
+  color: #fff;
+}

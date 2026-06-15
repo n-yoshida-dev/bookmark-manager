@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers の設定。フロント（Vite のビルド成果物）を静的配信する。
+  "name": "bookmark-manager",
+  "compatibility_date": "2026-06-13",
+  "assets": {
+    // ビルドコマンド（cd frontend && npm run build）が生成する成果物ディレクトリ。
+    // ここを frontend（ソース）ではなく frontend/dist に向けるのが重要。
+    "directory": "./frontend/dist",
+    // クライアント側ルーティング用に、未知のパスは index.html を返す（SPA）。
+    "not_found_handling": "single-page-application"
+  }
+}

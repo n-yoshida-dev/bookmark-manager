@@ -15,3 +15,9 @@ frontend/node_modules/
 # OS / エディタ
 .DS_Store
 *.log
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
